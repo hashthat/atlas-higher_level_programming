@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-
-def CodeWiz():
-    for i in range (1, 101):
-        if i % 3 == 0 and i % 5 == 0:
-            print("{}".format("CodeWiz", end="\n"))
-
-        elif i % 3 == 0:
-            print("{}".format("Code"), end="\n")
-        elif i % 5 == 0:
-            print("{}".format("wiz", end="\n"))
+def fizzbuzz():
+    for x in range(1, 101):
+        if x % 3 == 0 and x % 5 == 0:
+            print(f"{x - 1}: FizzBuzz", end="\n")
+        elif x % 3 == 0:
+            print(f"{x - 1}: Fizz", end="\n")
+        elif x % 5 == 0:
+            print(f"{x - 1}: Buzz", end="\n")
         else:
-            print("{}".format(i), end="\n")
+            print(f"{x - 1}: ", end="\n")
 
-CodeWiz()
+# Test the function
+fizzbuzz()
+
